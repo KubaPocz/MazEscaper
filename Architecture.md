@@ -1,7 +1,6 @@
 # MazEscaper: architektura projektu
 
 Dokument opisuje strukturę kodu i zasady, których trzymamy się w prototypie.
-Źródła: `MazEscaper_GDD_v2.docx`, `MazEscaper_Plan_Prototypu_Unity.docx` (Część 0).
 
 ## 1. Założenia
 
