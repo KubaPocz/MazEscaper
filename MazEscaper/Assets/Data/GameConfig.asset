@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c0bbde2985f0d44a8e91b830448ad9, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: Data::GameConfigAsset
+  config:
+    ActionPointsPerDay: 3
+    MazeSize: 5
+    MissionTimeBudget: 10
+    FoodSpoilageRate: 0.05
+    FoodPerResidentPerDay: 1
+    WaterPerResidentPerDay: 1
+    StorageCapacity: 100
+    StartingFood: 20
+    StartingWater: 20
+    StartingWood: 10
+    StartingStone: 5
+    StartingParts: 0
+    StartingMedicine: 0
+    ForecastYellowDays: 3
+    StartingResidentCount: 5
+    FoodWaterPerActionPoint: 2
+    WoodStonePerActionPoint: 1
+    RestCostPoints: 1
+    MinTraitDomainsAtStart: 3
+    StartingMorale: 3
+    MinMorale: 0
+    MaxMorale: 5
+    RiskChancePerPoint: 0.05
+    MaxNegativeStatuses: 2
+    MaxTotalApPenalty: 2
+    MinApForAbleResident: 1
+    ProtectionPeriodDays: 1
+    FatigueWorkDaysThreshold: 3
+    ExhaustionDaysThreshold: 2
+    HungerToInjuredDays: 2
+    DailyEventChance: 0.3
+    MaxSettlementEventsPerDay: 1
+    CampfireApCost: 1
+    RepairCostPoints: 2
+    MinCrewSize: 2
+    MaxCrewSize: 4
+    ExpeditionFoodPerPersonPerDay: 1
+    ExpeditionWaterPerPersonPerDay: 1
+    SearchLocationTimeCost: 2
+    ExpeditionDurationWithNightDays: 2
+    MinRandomEventsPerExpedition: 1
+    MaxRandomEventsPerExpedition: 3
+    CareCostPoints: 1
+    UntreatedDeathDays: 3
+    MoraleLossOnCompanionDeath: 1
+    ChanceLevelLowMax: 0.35
+    ChanceLevelHighMin: 0.65
+    ClosingCounterDays: 25
+    EscapeElementsRequired: 1

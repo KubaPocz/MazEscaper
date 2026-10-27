@@ -67,5 +67,10 @@ namespace MazEscaper.Core
         // ---------- Część 6: zamknięcie pętli ----------
         public int ClosingCounterDays = 25;         // plan, część 6 (GDD: 40-25)
         public int EscapeElementsRequired = 1;      // plan, część 6
+
+        public GameConfig Clone()
+        {
+            return (GameConfig)MemberwiseClone();
+        }
     }
 }
