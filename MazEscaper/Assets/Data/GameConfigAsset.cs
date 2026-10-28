@@ -1,7 +1,6 @@
 using UnityEngine;
-using MazEscaper.Core;
 
-namespace MazEscaper.Data
+namespace Data
 {
     [CreateAssetMenu(fileName = "GameConfig", menuName = "MazEscaper/Game Config")]
 

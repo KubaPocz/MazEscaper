@@ -1,8 +1,9 @@
 using UnityEngine;
+using ILogger = Core.ILogger;
 
 namespace UI
 {
-    public class UnityLogger:MazEscaper.Core.ILogger
+    public class UnityLogger:ILogger
     {
         public void Log(string message)
         {

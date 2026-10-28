@@ -17,19 +17,19 @@ MonoBehaviour:
     MazeSize: 5
     MissionTimeBudget: 10
     FoodSpoilageRate: 0.05
-    FoodPerResidentPerDay: 1
-    WaterPerResidentPerDay: 1
-    StorageCapacity: 100
-    StartingFood: 20
-    StartingWater: 20
-    StartingWood: 10
-    StartingStone: 5
+    FoodPerResidentPerDay: 4
+    WaterPerResidentPerDay: 4
+    StorageCapacity: 400
+    StartingFood: 80
+    StartingWater: 80
+    StartingWood: 40
+    StartingStone: 20
     StartingParts: 0
     StartingMedicine: 0
     ForecastYellowDays: 3
     StartingResidentCount: 5
-    FoodWaterPerActionPoint: 2
-    WoodStonePerActionPoint: 1
+    FoodWaterPerActionPoint: 8
+    WoodStonePerActionPoint: 4
     RestCostPoints: 1
     MinTraitDomainsAtStart: 3
     StartingMorale: 3
@@ -49,8 +49,8 @@ MonoBehaviour:
     RepairCostPoints: 2
     MinCrewSize: 2
     MaxCrewSize: 4
-    ExpeditionFoodPerPersonPerDay: 1
-    ExpeditionWaterPerPersonPerDay: 1
+    ExpeditionFoodPerPersonPerDay: 4
+    ExpeditionWaterPerPersonPerDay: 4
     SearchLocationTimeCost: 2
     ExpeditionDurationWithNightDays: 2
     MinRandomEventsPerExpedition: 1

@@ -1,4 +1,4 @@
-﻿namespace MazEscaper.Core
+﻿namespace Core
 {
     public interface ILogger
     {

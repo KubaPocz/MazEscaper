@@ -1,6 +1,6 @@
 using UnityEngine;
-using MazEscaper.Core;
-using MazEscaper.Data;
+using Core;
+using Data;
 using UI;
 
 namespace MazEscaper.UI

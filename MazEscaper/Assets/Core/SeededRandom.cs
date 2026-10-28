@@ -1,4 +1,4 @@
-using MazEscaper.Core;
+using Core;
 using Random = System.Random;
 
 public class SeededRandom : IRandom

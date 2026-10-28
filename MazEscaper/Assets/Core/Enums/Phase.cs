@@ -1,4 +1,4 @@
-namespace MazEscaper.Core.Enums
+namespace Core.Enums
 {
     public enum Phase
     {
