@@ -1,5 +1,4 @@
-﻿using Core.Enums;
-using Core;
+﻿using Core;
 using NUnit.Framework;
 namespace Tests
 {

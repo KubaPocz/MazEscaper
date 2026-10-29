@@ -1,3 +1,4 @@
+using System;
 namespace Core
 {
     public class Storehouse
@@ -23,6 +24,27 @@ namespace Core
             Parts.AddResource(config.StartingParts);
             Medicine = new ResourceStore(config.MedicineStorageCapacity);
             Medicine.AddResource(config.StartingMedicine);
+        }
+
+        public ResourceStore Get(ResourceType type)
+        {
+            switch (type)
+            {
+                case ResourceType.Food:
+                    return Food;
+                case ResourceType.Water:
+                    return Water;
+                case ResourceType.Wood:
+                    return Wood;
+                case ResourceType.Stone:
+                    return Stone;
+                case ResourceType.Parts:
+                    return Parts;
+                case ResourceType.Medicine:
+                    return Medicine;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(type), type, null);
+            }
         }
     }
 }

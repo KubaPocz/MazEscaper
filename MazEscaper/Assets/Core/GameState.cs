@@ -1,5 +1,3 @@
-using Core.Enums;
-
 namespace Core
 {
     public class GameState

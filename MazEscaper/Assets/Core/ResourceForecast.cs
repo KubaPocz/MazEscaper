@@ -1,5 +1,4 @@
-﻿using Core.Enums;
-namespace Core
+﻿namespace Core
 {
     public class ResourceForecast
     {

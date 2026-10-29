@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
 using Core;
-using Core.Enums;
 
 public class ResourceForecastSystemTests
 {
