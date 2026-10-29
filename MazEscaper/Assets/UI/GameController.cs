@@ -2,9 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Core;
 using Data;
-using UI;
 
-namespace MazEscaper.UI
+namespace UI
 {
     public class GameController : MonoBehaviour
     {
@@ -24,6 +23,20 @@ namespace MazEscaper.UI
 
             logger.Log($"Seed: {seed}");
             state = new GameState(config, new SeededRandom(seed));
+            RenderViews();
+        }
+
+        private void RenderViews()
+        {
+            foreach (GameView view in views)
+                view.Render(state);
+        }
+
+        public void OnNextPhaseClicked()
+        {
+            var advancePhaseCommand = new AdvancePhaseCommand();
+            advancePhaseCommand.Execute(state);
+            RenderViews();
         }
     }
 }

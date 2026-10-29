@@ -39,11 +39,16 @@ namespace Core
 
         public int RemoveResource(int amount)
         {
-            if (amount < 0)
-                throw new ArgumentOutOfRangeException(nameof(amount),"Amount cannot be negative");
-            int amountToRemove = Math.Min(currentAmount, amount);
+            int amountToRemove = PreviewRemove(amount);
             currentAmount -= amountToRemove;
             return amountToRemove;
+        }
+
+        public int PreviewRemove(int amount)
+        {
+            if (amount < 0)
+                throw new ArgumentOutOfRangeException(nameof(amount), "Amount cannot be negative");
+            return Math.Min(currentAmount, amount);
         }
     }
 }

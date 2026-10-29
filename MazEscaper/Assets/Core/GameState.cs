@@ -10,6 +10,7 @@ namespace Core
         public int CurrentDay { get; set; }
         public Storehouse Storehouse { get;}
         public int ResidentCount{ get; set; }
+        public EveningReport EveningReport { get; set; }
 
         public GameState(GameConfig config, IRandom random)
         {
@@ -19,6 +20,7 @@ namespace Core
             CurrentDay = 1;
             Storehouse = new Storehouse(config);
             ResidentCount = config.StartingResidentCount;
+            EveningReport = null;
         }
     }
 }

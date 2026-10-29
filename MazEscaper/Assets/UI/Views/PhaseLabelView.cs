@@ -3,12 +3,11 @@ using TMPro;
 
 namespace UI
 {
-    public class PhaseLabelView:GameView
+    public class PhaseLabelView:LabelView
     {
-        public TextMeshPro text;
         public override void Render(GameState state)
         {
-            text.text = state.Phase.ToString();
+            text.text = $"Phase: {state.Phase.ToString()}";
         }
     }
 }

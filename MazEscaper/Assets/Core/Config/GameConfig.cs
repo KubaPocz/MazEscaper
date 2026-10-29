@@ -23,6 +23,7 @@ public class GameConfig
     public int StartingParts = 0; // ROBOCZE
     public int StartingMedicine = 0; // ROBOCZE
     public int ForecastYellowDays = 3; // ROBOCZE: próg żółtego koloru prognozy
+    public int ForecastRedDays = 1; // ROBOCZE: próg żółtego koloru prognozy
 
     // ---------- Część 2: mieszkańcy i PA ----------
     public int StartingResidentCount = 5; // plan, część 2 (GDD: 4-6)
