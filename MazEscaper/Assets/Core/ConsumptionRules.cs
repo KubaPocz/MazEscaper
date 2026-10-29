@@ -19,11 +19,13 @@ namespace Core
         }
         public static int FoodTomorrow(int currentFood, int dailyUsage, GameConfig config)
         {
-            return currentFood-dailyUsage-(int)Math.Floor((currentFood-dailyUsage)>0?(currentFood-dailyUsage):0 * config.FoodSpoilageRate);
+            int foodTomorrow = currentFood - dailyUsage - (int)Math.Floor((currentFood-dailyUsage) * config.FoodSpoilageRate);
+            return foodTomorrow>0?foodTomorrow:0;
         }
         public static int WaterTomorrow(int currentWater, int dailyUsage)
         {
-            return currentWater-dailyUsage;
+            int waterTomorrow = currentWater - dailyUsage;
+            return waterTomorrow > 0?waterTomorrow:0;
         }
     }
 }

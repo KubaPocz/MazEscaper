@@ -8,7 +8,7 @@ namespace Core
         public int? DaysToEmpty { get; }
         public ForecastLevel Level { get; }
 
-        public ResourceForecast(int tomorrowAmount, int dailyBalance, int daysToEmpty, ForecastLevel level)
+        public ResourceForecast(int tomorrowAmount, int dailyBalance, int? daysToEmpty, ForecastLevel level)
         {
             TomorrowAmount = tomorrowAmount;
             DailyBalance = dailyBalance;
