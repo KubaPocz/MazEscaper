@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using Core;
 using Data;
@@ -9,6 +10,7 @@ namespace MazEscaper.UI
     {
         [SerializeField] private GameConfigAsset configAsset;
         [SerializeField] private int fixedSeed = 0;
+        [SerializeField] private List<GameView> views = new List<GameView>();
 
         private GameState state;
 

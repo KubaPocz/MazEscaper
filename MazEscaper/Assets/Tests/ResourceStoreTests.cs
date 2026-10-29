@@ -1,5 +1,8 @@
-using NUnit.Framework;
 using Core;
+using NUnit.Framework;
+
+namespace Tests
+{
     public class ResourceStoreTests
     {
         [Test]
@@ -83,3 +86,4 @@ using Core;
             Assert.AreEqual(0, storeB.CurrentAmount);
         }
     }
+}

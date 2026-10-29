@@ -1,20 +1,21 @@
 using Core;
 using Random = System.Random;
-
-public class SeededRandom : IRandom
+namespace Core
 {
-    private readonly Random rng;
-
-    public int Seed { get; }
-
-    public SeededRandom(int seed)
+    public class SeededRandom : IRandom
     {
-        Seed = seed;
-        rng = new Random(seed);
+        private readonly Random rng;
+
+        public int Seed { get; }
+
+        public SeededRandom(int seed)
+        {
+            Seed = seed;
+            rng = new Random(seed);
+        }
+
+        public int NextInt(int minInclusive, int maxExclusive) => rng.Next(minInclusive, maxExclusive);
+        public float NextFloat() => (float)rng.NextDouble();
+        public bool Chance(float probability) => rng.NextDouble() < probability;
     }
-
-    public int NextInt(int minInclusive, int maxExclusive) => rng.Next(minInclusive, maxExclusive);
-    public float NextFloat() => (float)rng.NextDouble();
-    public bool Chance(float probability) => rng.NextDouble() < probability;
-
 }
