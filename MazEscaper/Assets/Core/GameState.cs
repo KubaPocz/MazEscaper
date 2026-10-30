@@ -9,6 +9,7 @@ namespace Core
         public Storehouse Storehouse { get;}
         public int ResidentCount{ get; set; }
         public EveningReport EveningReport { get; set; }
+        public EventLog EventLog { get; }
 
         public GameState(GameConfig config, IRandom random)
         {
@@ -19,6 +20,7 @@ namespace Core
             Storehouse = new Storehouse(config);
             ResidentCount = config.StartingResidentCount;
             EveningReport = null;
+            EventLog = new EventLog();
         }
     }
 }
