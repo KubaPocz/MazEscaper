@@ -1,6 +1,4 @@
-# MazEscaper: ściągawka z architektury i konwencji
-
-Dokument dla całej gry, nie tylko prototypu. Odpowiada na pytania: gdzie umieścić skrypt, jak go nazwać, kiedy zrobić interfejs, kto kogo widzi i za co odpowiada każda warstwa. Nie opisuje konkretnych plików, bo będzie ich dużo i zmieniają się szybciej niż zasady.
+# MazEscaper: Architektura projektu
 
 ---
 
