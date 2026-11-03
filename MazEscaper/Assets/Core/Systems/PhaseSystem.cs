@@ -17,7 +17,7 @@ namespace Core
             switch (state.Phase)
             {
                 case Phase.Morning:
-                    //TODO
+                    state.Assignments.Clear();
                     break;
                 case Phase.Day:
                     //TODO
