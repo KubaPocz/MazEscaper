@@ -16,6 +16,7 @@
             Id = id;
             Name = name;
             Trait = trait;
+            Experience = 0;
         }
     }
 }

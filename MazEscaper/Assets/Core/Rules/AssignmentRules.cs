@@ -19,12 +19,14 @@ namespace Core
             return null;
         }
 
-        // Ile PA ma osoba na dzień. Część 3 odejmie tu kary ze statusów.
+        //returns how many PA have this resident per day
+        //TODO: part 3 will substract PA here
         public static int AvailablePoints(GameState state, Resident resident)
         {
             return state.Config.ActionPointsPerDay;
         }
 
+        //returns free points of resident with this id
         public static int FreePoints(GameState state, int residentId)
         {
             Resident resident = FindResident(state, residentId);
