@@ -7,13 +7,16 @@ using UnityEngine.UI;
 
 namespace UI
 {
-    public class AssignmentCellView
+    /// <summary>
+    /// One resident
+    /// </summary>
+    public class AssignmentCellView:MonoBehaviour
     {
         [SerializeField] TMP_Text points;
         [SerializeField] Button plusButton;
         [SerializeField] Button minusButton;
-        event Action<int,string> PlusClicked;
-        event Action<int,string> MinusClicked;
+        public event Action<int,string> PlusClicked;
+        public event Action<int,string> MinusClicked;
         int residentId;
         string targetId;
 
